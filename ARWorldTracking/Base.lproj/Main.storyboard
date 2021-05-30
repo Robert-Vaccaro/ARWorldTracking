@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARWorldTracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCc-QU-2DC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BM-b7-mff">
+                                <rect key="frame" x="20" y="64" width="181" height="93"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="9KB-Uo-6af"/>
+                                    <constraint firstAttribute="height" constant="93" id="zxD-wW-buq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLF-gN-PzS">
+                                <rect key="frame" x="327" y="64" width="67" height="47"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="FDt-jf-Eao"/>
+                                    <constraint firstAttribute="width" constant="67" id="f1T-oU-pIy"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbK-DP-JzS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMF-YM-FWU">
+                                <rect key="frame" x="20" y="165" width="181" height="93"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="1WO-wx-Ynn"/>
+                                    <constraint firstAttribute="width" constant="181" id="Msf-cn-ybw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PCc-QU-2DC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0Cl-zD-Llj"/>
+                            <constraint firstItem="7BM-b7-mff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Vd-GU-HmZ"/>
+                            <constraint firstItem="PCc-QU-2DC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ADK-2E-pkS"/>
+                            <constraint firstItem="uMF-YM-FWU" firstAttribute="top" secondItem="7BM-b7-mff" secondAttribute="bottom" constant="8" symbolic="YES" id="FSf-x4-742"/>
+                            <constraint firstItem="PCc-QU-2DC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PLN-JS-oRb"/>
+                            <constraint firstItem="iLF-gN-PzS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iIg-Sb-NJi"/>
+                            <constraint firstItem="7BM-b7-mff" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iTS-AR-fuF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iLF-gN-PzS" secondAttribute="trailing" constant="20" id="lod-Rb-O35"/>
+                            <constraint firstItem="uMF-YM-FWU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="r4m-6X-ee6"/>
+                            <constraint firstItem="PCc-QU-2DC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wef-CE-21v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eulerAnglesLabel" destination="uMF-YM-FWU" id="7ju-Lv-Xhq"/>
+                        <outlet property="locationLabel" destination="7BM-b7-mff" id="eeu-Zs-PQU"/>
+                        <outlet property="resetBtn" destination="iLF-gN-PzS" id="8y9-E4-dPx"/>
+                        <outlet property="sceneView" destination="PCc-QU-2DC" id="Lc6-xg-NNO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
